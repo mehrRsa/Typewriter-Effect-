@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.jumbotron {
+  color: white;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url(img/xavier-von-erlach-h9g5-vJQgbo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.typing {
+  margin-left: 10px !important;
+  position: relative;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  width: 1px;
+  height: 4rem;
+  border-left: 1px solid rgb(255, 255, 255);
+  animation: blink 0.7s infinite ease;
+}
+
+.btn-area .btn-one {
+  background-color: rgb(97, 205, 255) !important;
+  color: black;
+  border: 2px solid rgb(22, 181, 209);
+  border-radius: 6px;
+}
+
+.btn-area {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.typing {
+  color: rgb(97, 205, 255);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
